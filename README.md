@@ -1,6 +1,6 @@
 # EmbeddingForge — 多Agent协作向量嵌入优化流水线
 
-基于 Claude Code 的多智能体向量嵌入优化流水线，实现语料分析→嵌入训练→向量索引→效果评估的全自动化闭环。
+基于 Claude Code / DeepSeek API / MiMo 模型的多智能体向量嵌入优化流水线，实现语料分析→嵌入训练→向量索引→效果评估的全自动化闭环。
 
 ## 架构
 
@@ -30,7 +30,7 @@ python -m src.main run ./demo/sample_corpus
 ## 技术栈
 
 - Python
-- Claude Code / DeepSeek API
+- Claude Code / DeepSeek API / MiMo 模型
 - Sentence Transformers
 - FAISS / Annoy 向量索引
 
