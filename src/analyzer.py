@@ -97,7 +97,7 @@ class AnalyzerAgent:
 
         if num_samples < 100:
             return {
-                "model": "BAAI/bge-small-zh-v1.5",
+                "model": "mimo-embedding-small",
                 "strategy": "fine_tune_light",
                 "dimension": 512,
                 "batch_size": 16,
@@ -109,7 +109,7 @@ class AnalyzerAgent:
             }
         elif num_samples < 10000:
             return {
-                "model": "BAAI/bge-base-zh-v1.5",
+                "model": "mimo-embedding-base",
                 "strategy": "contrastive_learning",
                 "dimension": 768,
                 "batch_size": 32,
@@ -121,7 +121,7 @@ class AnalyzerAgent:
             }
         else:
             return {
-                "model": "BAAI/bge-large-zh-v1.5",
+                "model": "mimo-embedding-large",
                 "strategy": "multi_stage_training",
                 "dimension": 1024,
                 "batch_size": 64,
