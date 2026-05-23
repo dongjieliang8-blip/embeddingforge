@@ -97,7 +97,7 @@ class AnalyzerAgent:
 
         if num_samples < 100:
             return {
-                "model": "mimo-embedding-small",
+                "model": "mimo-v2.5-embedding-small",
                 "strategy": "fine_tune_light",
                 "dimension": 512,
                 "batch_size": 16,
@@ -109,7 +109,7 @@ class AnalyzerAgent:
             }
         elif num_samples < 10000:
             return {
-                "model": "mimo-embedding-base",
+                "model": "mimo-v2.5-embedding-base",
                 "strategy": "contrastive_learning",
                 "dimension": 768,
                 "batch_size": 32,
@@ -121,7 +121,7 @@ class AnalyzerAgent:
             }
         else:
             return {
-                "model": "mimo-embedding-large",
+                "model": "mimo-v2.5-embedding-large",
                 "strategy": "multi_stage_training",
                 "dimension": 1024,
                 "batch_size": 64,

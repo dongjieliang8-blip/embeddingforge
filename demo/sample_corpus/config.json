@@ -1,7 +1,8 @@
 {
-  "api_provider": "claude",
-  "model": "mimo-7b",
-  "embedding_model": "mimo-embedding",
+  "api_provider": "mimo",
+  "api_base": "https://token-plan-cn.xiaomimimo.com/anthropic",
+  "model": "mimo-v2.5",
+  "embedding_model": "mimo-v2.5-embedding",
   "training_strategy": "contrastive_learning",
   "corpus_type": "technical_docs",
   "index_type": "hnsw",
