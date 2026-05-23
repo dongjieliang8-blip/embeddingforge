@@ -1,0 +1,13 @@
+{
+  "embedding_model": "BAAI/bge-base-zh-v1.5",
+  "training_strategy": "contrastive_learning",
+  "corpus_type": "technical_docs",
+  "index_type": "hnsw",
+  "dimension": 768,
+  "batch_size": 32,
+  "learning_rate": 2e-5,
+  "num_epochs": 5,
+  "max_seq_length": 512,
+  "num_negatives": 15,
+  "temperature": 0.05
+}
